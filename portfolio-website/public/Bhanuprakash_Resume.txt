@@ -1,0 +1,27 @@
+Duggasani Bhanuprakash Reddy
+B.Tech AI & Data Science Student
+REVA University, Bengaluru
+
+This is a placeholder resume file. Replace this with your actual resume PDF or document when ready.
+
+Email: duggasanibhanuprakashreddy@gmail.com
+LinkedIn: https://www.linkedin.com/in/duggasanibhanuprakashreddy
+GitHub: https://github.com/duggasanibhanuprakashreddy-cmyk
+Location: Bengaluru, Karnataka, India
+
+Skills:
+- Python
+- SQL
+- Data Structures & Algorithms
+- Data Analysis
+- Data Visualization
+- Exploratory Data Analysis (EDA)
+- Machine Learning Fundamentals
+- IoT
+- Embedded Systems
+- Bluetooth Protocols & Integration
+
+Education:
+B.Tech in Computer Science & Engineering (AI & Data Science)
+REVA University, Bengaluru
+September 2025 – February 2029

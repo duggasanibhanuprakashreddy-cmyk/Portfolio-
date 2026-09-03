@@ -1,0 +1,12 @@
+.glass-panel {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 20px 30px rgba(2, 6, 23, 0.28);
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 640px) {
+  .glass-panel {
+    backdrop-filter: none;
+  }
+}
