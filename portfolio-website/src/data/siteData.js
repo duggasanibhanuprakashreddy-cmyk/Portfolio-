@@ -9,7 +9,7 @@ export const personalInfo = {
   cgpa: '8.85 CGPA',
   location: 'Bengaluru, Karnataka, India',
   email: 'duggasanibhanuprakashreddy@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/duggasanibhanuprakashreddy',
+  linkedin: 'https://www.linkedin.com/in/duggasanibhanuprakashreddy/',
   github: 'https://github.com/duggasanibhanuprakashreddy-cmyk',
   portfolio: 'https://myportfolio-website-delta.vercel.app',
   resumeUrl: '/Bhanuprakash_Resume.txt',

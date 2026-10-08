@@ -77,7 +77,7 @@ export default function Navbar() {
           <a
             href={personalInfo.github}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             aria-label="GitHub Profile"
             className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-slate-900/60 text-slate-300 hover:text-cyan-300 hover:border-cyan-400/40 transition"
           >
@@ -86,16 +86,16 @@ export default function Navbar() {
           <a
             href={personalInfo.linkedin}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             aria-label="LinkedIn Profile"
-            className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-slate-900/60 text-slate-300 hover:text-cyan-300 hover:border-cyan-400/40 transition"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-slate-900/60 text-slate-300 hover:text-cyan-300 hover:border-cyan-400/40 transition cursor-pointer"
           >
             <BriefcaseBusiness size={15} />
           </a>
           <a
             href={personalInfo.resumeUrl}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             className="flex items-center gap-1.5 rounded-full border border-cyan-500/40 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 px-3 py-1.5 text-xs font-medium text-cyan-200 hover:border-cyan-400 hover:text-white transition shadow-sm shadow-cyan-500/20"
           >
             <FileText size={13} />
@@ -130,7 +130,7 @@ export default function Navbar() {
             <a
               href={personalInfo.github}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="flex items-center gap-2 text-xs text-slate-300 hover:text-white"
             >
               <Code2 size={14} /> GitHub
@@ -138,7 +138,7 @@ export default function Navbar() {
             <a
               href={personalInfo.linkedin}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="flex items-center gap-2 text-xs text-slate-300 hover:text-white"
             >
               <BriefcaseBusiness size={14} /> LinkedIn
@@ -146,7 +146,7 @@ export default function Navbar() {
             <a
               href={personalInfo.resumeUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="ml-auto flex items-center gap-1.5 rounded-full border border-cyan-400/40 bg-cyan-500/20 px-3 py-1 text-xs text-cyan-200"
             >
               <FileText size={12} /> Resume

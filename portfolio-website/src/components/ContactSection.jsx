@@ -9,6 +9,7 @@ import {
   Check,
   Sparkles,
   FileText,
+  ArrowUpRight,
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import TiltCard from './TiltCard';
@@ -122,16 +123,27 @@ export default function ContactSection() {
             {/* LinkedIn Card */}
             <TiltCard
               maxTilt={6}
-              className="glass-panel rounded-2xl p-5 border border-white/10 space-y-2"
+              className="glass-panel rounded-2xl p-5 border border-white/10 space-y-3"
             >
-              <div className="flex items-center gap-2.5 text-xs font-mono text-cyan-400">
-                <BriefcaseBusiness size={16} />
-                <span>LINKEDIN NETWORK</span>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5 text-xs font-mono text-cyan-400">
+                  <BriefcaseBusiness size={16} />
+                  <span>LINKEDIN NETWORK</span>
+                </div>
+                <a
+                  href={personalInfo.linkedin}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex items-center gap-1 rounded-lg border border-cyan-500/30 bg-cyan-950/40 px-2.5 py-1 text-xs font-mono text-cyan-300 hover:text-white hover:border-cyan-400 transition cursor-pointer"
+                >
+                  <span>Open</span>
+                  <ArrowUpRight size={12} />
+                </a>
               </div>
               <a
                 href={personalInfo.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="block text-sm font-semibold text-white hover:text-cyan-300 transition"
               >
                 linkedin.com/in/duggasanibhanuprakashreddy
@@ -141,16 +153,27 @@ export default function ContactSection() {
             {/* GitHub Card */}
             <TiltCard
               maxTilt={6}
-              className="glass-panel rounded-2xl p-5 border border-white/10 space-y-2"
+              className="glass-panel rounded-2xl p-5 border border-white/10 space-y-3"
             >
-              <div className="flex items-center gap-2.5 text-xs font-mono text-cyan-400">
-                <Code2 size={16} />
-                <span>GITHUB REPOSITORIES</span>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5 text-xs font-mono text-cyan-400">
+                  <Code2 size={16} />
+                  <span>GITHUB REPOSITORIES</span>
+                </div>
+                <a
+                  href={personalInfo.github}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex items-center gap-1 rounded-lg border border-white/10 bg-slate-900/60 px-2.5 py-1 text-xs font-mono text-slate-300 hover:text-white hover:border-cyan-400 transition cursor-pointer"
+                >
+                  <span>Open</span>
+                  <ArrowUpRight size={12} />
+                </a>
               </div>
               <a
                 href={personalInfo.github}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="block text-sm font-semibold text-white hover:text-cyan-300 transition"
               >
                 github.com/duggasanibhanuprakashreddy-cmyk

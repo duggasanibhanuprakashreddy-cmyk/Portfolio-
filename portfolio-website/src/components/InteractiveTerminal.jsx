@@ -138,6 +138,60 @@ export default function InteractiveTerminal() {
     }
   };
 
+  const renderTerminalLine = (line) => {
+    if (typeof line !== 'string') return line;
+    if (line.includes('linkedin.com/in/duggasanibhanuprakashreddy')) {
+      const parts = line.split('linkedin.com/in/duggasanibhanuprakashreddy');
+      return (
+        <span>
+          {parts[0]}
+          <a
+            href="https://www.linkedin.com/in/duggasanibhanuprakashreddy/"
+            target="_blank"
+            rel="noopener"
+            className="text-cyan-400 underline hover:text-cyan-200 font-medium cursor-pointer"
+          >
+            linkedin.com/in/duggasanibhanuprakashreddy
+          </a>
+          {parts[1]}
+        </span>
+      );
+    }
+    if (line.includes('github.com/duggasanibhanuprakashreddy-cmyk')) {
+      const parts = line.split('github.com/duggasanibhanuprakashreddy-cmyk');
+      return (
+        <span>
+          {parts[0]}
+          <a
+            href="https://github.com/duggasanibhanuprakashreddy-cmyk"
+            target="_blank"
+            rel="noopener"
+            className="text-cyan-400 underline hover:text-cyan-200 cursor-pointer"
+          >
+            github.com/duggasanibhanuprakashreddy-cmyk
+          </a>
+          {parts[1]}
+        </span>
+      );
+    }
+    if (line.includes('duggasanibhanuprakashreddy@gmail.com')) {
+      const parts = line.split('duggasanibhanuprakashreddy@gmail.com');
+      return (
+        <span>
+          {parts[0]}
+          <a
+            href="mailto:duggasanibhanuprakashreddy@gmail.com"
+            className="text-cyan-400 underline hover:text-cyan-200 cursor-pointer"
+          >
+            duggasanibhanuprakashreddy@gmail.com
+          </a>
+          {parts[1]}
+        </span>
+      );
+    }
+    return line;
+  };
+
   const quickPills = ['whoami', 'focus', 'skills', 'projects', 'status', 'contact', 'clear'];
 
   return (
@@ -174,7 +228,7 @@ export default function InteractiveTerminal() {
             <div className="text-slate-300/90 pl-4 space-y-0.5 leading-relaxed text-[13px]">
               {item.output.map((line, lIdx) => (
                 <div key={lIdx} className="text-slate-300">
-                  {line}
+                  {renderTerminalLine(line)}
                 </div>
               ))}
             </div>

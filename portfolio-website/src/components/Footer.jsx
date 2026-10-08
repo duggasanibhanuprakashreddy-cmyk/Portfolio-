@@ -34,9 +34,9 @@ export default function Footer() {
           <a
             href={personalInfo.linkedin}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             aria-label="LinkedIn Profile"
-            className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900/60 text-slate-300 hover:text-cyan-300 hover:border-cyan-400/40 transition"
+            className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-slate-900/60 text-slate-300 hover:text-cyan-300 hover:border-cyan-400/40 transition cursor-pointer"
           >
             <BriefcaseBusiness size={16} />
           </a>

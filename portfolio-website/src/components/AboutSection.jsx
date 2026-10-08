@@ -6,6 +6,8 @@ import {
   Sparkles,
   CheckCircle2,
   Code2,
+  BriefcaseBusiness,
+  ArrowUpRight,
 } from 'lucide-react';
 import TiltCard from './TiltCard';
 import { personalInfo, quickStats, mindsetCards } from '../data/siteData';
@@ -116,6 +118,16 @@ export default function AboutSection() {
                   <p className="text-xs text-cyan-400 font-mono">
                     B.Tech CSE • REVA University
                   </p>
+                  <a
+                    href={personalInfo.linkedin}
+                    target="_blank"
+                    rel="noopener"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-300 hover:text-cyan-200 hover:underline mt-1 cursor-pointer"
+                  >
+                    <BriefcaseBusiness size={12} />
+                    <span>linkedin.com/in/duggasanibhanuprakashreddy</span>
+                    <ArrowUpRight size={11} />
+                  </a>
                 </div>
               </div>
 

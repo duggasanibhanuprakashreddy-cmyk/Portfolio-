@@ -73,7 +73,7 @@ export default function HeroSection() {
               <a
                 href={personalInfo.resumeUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-slate-200 hover:border-cyan-400/40 hover:text-white hover:bg-white/10 transition-all"
               >
                 <FileText size={16} className="text-cyan-400" />
@@ -83,7 +83,7 @@ export default function HeroSection() {
               <a
                 href={personalInfo.github}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-slate-200 hover:border-cyan-400/40 hover:text-white hover:bg-white/10 transition-all"
               >
                 <Code2 size={16} />
@@ -93,8 +93,8 @@ export default function HeroSection() {
               <a
                 href={personalInfo.linkedin}
                 target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-slate-200 hover:border-cyan-400/40 hover:text-white hover:bg-white/10 transition-all"
+                rel="noopener"
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-3 text-sm font-medium text-slate-200 hover:border-cyan-400/40 hover:text-white hover:bg-white/10 transition-all cursor-pointer"
               >
                 <BriefcaseBusiness size={16} />
                 <span>LinkedIn</span>
