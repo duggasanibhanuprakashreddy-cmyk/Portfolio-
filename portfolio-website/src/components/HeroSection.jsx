@@ -10,7 +10,7 @@ import Scene3D from './Scene3D';
 import TiltCard from './TiltCard';
 import { personalInfo } from '../data/siteData';
 
-export default function HeroSection() {
+export default function HeroSection({ onResumeClick }) {
   return (
     <section id="home" className="relative min-h-[90vh] flex flex-col justify-center pt-8 pb-16 overflow-hidden">
       {/* Translucent Giant Watermark Typography in Background */}
@@ -70,15 +70,13 @@ export default function HeroSection() {
                 <ArrowDown size={16} />
               </a>
 
-              <a
-                href={personalInfo.resumeUrl}
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-slate-200 hover:border-cyan-400/40 hover:text-white hover:bg-white/10 transition-all"
+              <button
+                onClick={onResumeClick}
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-slate-200 hover:border-cyan-400/40 hover:text-white hover:bg-white/10 transition-all cursor-pointer"
               >
                 <FileText size={16} className="text-cyan-400" />
                 <span>Resume</span>
-              </a>
+              </button>
 
               <a
                 href={personalInfo.github}

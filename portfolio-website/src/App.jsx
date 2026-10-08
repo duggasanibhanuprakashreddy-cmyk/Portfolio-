@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Background3DGrid from './components/Background3DGrid';
 import MarqueeTicker from './components/MarqueeTicker';
 import Navbar from './components/Navbar';
@@ -10,8 +11,11 @@ import JourneySection from './components/JourneySection';
 import CertificationsSection from './components/CertificationsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import ResumeModal from './components/ResumeModal';
 
 export default function App() {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   return (
     <div className="relative min-h-screen bg-[#050811] text-slate-100 selection:bg-cyan-500/20 selection:text-cyan-300">
       {/* Ambient 3D Cyber Background & Cursor Spotlight */}
@@ -21,11 +25,11 @@ export default function App() {
       <MarqueeTicker />
 
       {/* Floating Glassmorphic Pill Header */}
-      <Navbar />
+      <Navbar onResumeClick={() => setIsResumeOpen(true)} />
 
       {/* Main Content Sections */}
       <main className="relative z-10 space-y-12">
-        <HeroSection />
+        <HeroSection onResumeClick={() => setIsResumeOpen(true)} />
         <DeveloperExperienceSection />
         <AboutSection />
         <SkillsSection />
@@ -37,6 +41,12 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Interactive Resume Modal */}
+      <ResumeModal
+        isOpen={isResumeOpen}
+        onClose={() => setIsResumeOpen(false)}
+      />
     </div>
   );
 }

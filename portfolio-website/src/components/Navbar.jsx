@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { personalInfo, navItems } from '../data/siteData';
 
-export default function Navbar() {
+export default function Navbar({ onResumeClick }) {
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -92,15 +92,13 @@ export default function Navbar() {
           >
             <BriefcaseBusiness size={15} />
           </a>
-          <a
-            href={personalInfo.resumeUrl}
-            target="_blank"
-            rel="noopener"
-            className="flex items-center gap-1.5 rounded-full border border-cyan-500/40 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 px-3 py-1.5 text-xs font-medium text-cyan-200 hover:border-cyan-400 hover:text-white transition shadow-sm shadow-cyan-500/20"
+          <button
+            onClick={onResumeClick}
+            className="flex items-center gap-1.5 rounded-full border border-cyan-500/40 bg-gradient-to-r from-cyan-500/20 to-violet-500/20 px-3 py-1.5 text-xs font-medium text-cyan-200 hover:border-cyan-400 hover:text-white transition shadow-sm shadow-cyan-500/20 cursor-pointer"
           >
             <FileText size={13} />
             <span>Resume</span>
-          </a>
+          </button>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -143,14 +141,15 @@ export default function Navbar() {
             >
               <BriefcaseBusiness size={14} /> LinkedIn
             </a>
-            <a
-              href={personalInfo.resumeUrl}
-              target="_blank"
-              rel="noopener"
-              className="ml-auto flex items-center gap-1.5 rounded-full border border-cyan-400/40 bg-cyan-500/20 px-3 py-1 text-xs text-cyan-200"
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                if (onResumeClick) onResumeClick();
+              }}
+              className="ml-auto flex items-center gap-1.5 rounded-full border border-cyan-400/40 bg-cyan-500/20 px-3 py-1 text-xs text-cyan-200 cursor-pointer"
             >
               <FileText size={12} /> Resume
-            </a>
+            </button>
           </div>
         </div>
       )}

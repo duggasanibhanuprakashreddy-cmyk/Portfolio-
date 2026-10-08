@@ -12,7 +12,7 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/duggasanibhanuprakashreddy/',
   github: 'https://github.com/duggasanibhanuprakashreddy-cmyk',
   portfolio: 'https://myportfolio-website-delta.vercel.app',
-  resumeUrl: '/Bhanuprakash_Resume.txt',
+  resumeUrl: '/resume.html',
   tagline: 'Architecting intelligent pipelines, data models, and scalable systems using Python, Machine Learning, and Modern Web.',
   bio: 'Passionate Artificial Intelligence & Data Science undergraduate at REVA University. Driven by algorithmic problem solving, statistical modeling, machine learning fundamentals, and building responsive, full-stack data applications that transform raw complexity into intuitive digital solutions.',
 };
@@ -310,6 +310,14 @@ export const terminalCommands = {
       'LinkedIn : linkedin.com/in/duggasanibhanuprakashreddy',
       'GitHub   : github.com/duggasanibhanuprakashreddy-cmyk',
       'Location : Bengaluru, Karnataka, India',
+    ],
+  },
+  resume: {
+    output: [
+      'CURRICULUM VITAE — DUGGASANI BHANUPRAKASH REDDY',
+      '• B.Tech CSE (AI & Data Science), REVA University (CGPA: 8.85)',
+      '• Full ATS-optimized resume available for print & PDF export at: /resume.html',
+      '• Click the Resume button in header/hero or visit /resume.html directly.',
     ],
   },
 };
